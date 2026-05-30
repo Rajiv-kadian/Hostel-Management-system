@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manager Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+
+  <h2>Manager</h2>
+
+  <ul>
+    <li onclick="showManagerSection('students')">Students</li>
+    <li onclick="showManagerSection('rooms')">Rooms</li>
+    <li onclick="showManagerSection('fees')">Fees</li>
+  </ul>
+
+</div>
+
+<div class="content">
+
+  <h1>Manager Dashboard</h1>
+
+  <!-- STUDENTS -->
+  <div class="card manager-section" id="studentsSection">
+
+    <h3>Students Information</h3>
+
+    <table id="studentTable">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Room</th>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- ROOMS -->
+  <div class="card manager-section hidden" id="roomsSection">
+
+    <h3>Room Details</h3>
+
+    <p>Room 101 - Full</p>
+    <p>Room 105 - Vacant</p>
+    <p>Room 203 - Full</p>
+
+  </div>
+
+  <!-- FEES -->
+  <div class="card manager-section hidden" id="feesSection">
+
+    <h3>Student Fees & Fines</h3>
+
+    <table id="feesTable">
+      <tr>
+        <th>Name</th>
+        <th>Fee</th>
+        <th>Fine</th>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+</div>
+
+<script src="js/manager.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h2>Student</h2>
+
+    <ul>
+      <li onclick="showSection('room')">My Room</li>
+      <li onclick="showSection('fees')">Fees & Fines</li>
+      <li onclick="showSection('request')">Room Request</li>
+    </ul>
+  </div>
+
+  <div class="content">
+
+    <h1>Student Dashboard</h1>
+
+    <!-- ROOM SECTION -->
+    <div class="card section" id="roomSection">
+      <h3>My Room</h3>
+      <p id="studentName"></p>
+      <p id="studentRoom"></p>
+    </div>
+
+    <!-- FEES SECTION -->
+    <div class="card section hidden" id="feesSection">
+      <h3>Fees & Fine</h3>
+      <p id="studentFee"></p>
+      <p id="studentFine"></p>
+    </div>
+
+    <!-- REQUEST SECTION -->
+    <div class="card section hidden" id="requestSection">
+      <h3>Room Request</h3>
+
+      <select>
+        <option>Request Swap</option>
+        <option>Request Vacant Room</option>
+      </select>
+
+      <textarea placeholder="Reason"></textarea>
+
+      <button>Submit Request</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/student.js"></script>
+</body>
+</html>
